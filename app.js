@@ -7,7 +7,7 @@ const PORT = 3000;
 // Middleware para manejar JSON y cookies
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:4200",
+    origin : true,
     credentials: true, 
 }));
 app.use(cookieParser());
